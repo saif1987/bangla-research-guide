@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গবেষণাধর্মী লেখালেখি: প্রমিত রীতি ও নির্দেশনা</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Google Fonts: Noto Sans and Serif Bengali for proper rendering -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;600;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded Palette & Styles -->
+    <!-- 
+        Palette: "Intellectual Authority" (Deep Blue & Gold)
+        Adapted for Bangla Readability
+    -->
+    <style>
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: #F8FAFC; /* Slate 50 */
+            color: #1E293B; /* Slate 800 */
+        }
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Noto Serif Bengali', serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .connector-line {
+            width: 3px;
+            background-color: #CBD5E1;
+            height: 24px;
+            margin: 0 auto;
+        }
+        /* Card Hover Effect */
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Header Section -->
+    <header class="bg-[#1e3a8a] text-white py-12 px-4 shadow-xl border-b-4 border-[#F59E0B]">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-wide text-[#F59E0B]">গবেষণাধর্মী লেখালেখি</h1>
+            <p class="text-xl md:text-2xl font-light text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                প্রমিত বাংলা বানান, ফন্ট নির্বাচন এবং গবেষণাপত্র রচনার পূর্ণাঙ্গ নির্দেশিকা
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-12 gap-8">
+
+        <!-- Intro Section -->
+        <section class="col-span-1 md:col-span-12 mb-6">
+            <div class="bg-white rounded-lg shadow-sm p-8 border-r-8 border-[#1e3a8a]">
+                <h2 class="text-3xl font-bold text-[#1e3a8a] mb-4">প্রমিত রীতির গুরুত্ব</h2>
+                <p class="text-lg leading-loose text-slate-700">
+                    বাংলায় উচ্চতর গবেষণা বা ফরমাল লেখালেখির ক্ষেত্রে দুটি প্রধান চ্যালেঞ্জ রয়েছে: সঠিক ফন্ট নির্বাচন (ইউনিকোড বনাম আনসি) এবং বাংলা একাডেমি প্রণীত প্রমিত বানানরীতি অনুসরণ। এই ইনফোগ্রাফিকটি গবেষক এবং লেখকদের জন্য একটি আধুনিক গাইডলাইন, যা ডিজিটাল এবং প্রিন্ট মিডিয়ার মধ্যে সেতু হিসেবে কাজ করবে।
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: Authority Hierarchy (Flowchart) -->
+        <section class="col-span-1 md:col-span-12 lg:col-span-6 flex flex-col gap-6">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover h-full border-t-4 border-[#F59E0B]">
+                <div class="flex items-center mb-6">
+                    <span class="bg-[#1e3a8a] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">১</span>
+                    <h3 class="text-2xl font-bold text-[#1e3a8a]">ভাষা ও বানানের কর্তৃপক্ষ</h3>
+                </div>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    সঠিক বানান এবং পরিভাষা ব্যবহারের জন্য নির্দিষ্ট হায়ারার্কি বা ক্রম অনুসরণ করা বাঞ্ছনীয়।
+                </p>
+                
+                <!-- Tailwind/HTML Flowchart -->
+                <div class="flex flex-col items-center w-full">
+                    <!-- Step 1 -->
+                    <div class="bg-[#1e3a8a] text-[#F59E0B] font-bold py-4 px-8 rounded-lg w-full text-center shadow-lg relative z-10">
+                        বাংলা একাডেমি (ঢাকা)
+                        <div class="text-sm text-blue-200 font-normal mt-1 opacity-90">বানান ও ব্যাকরণের সর্বোচ্চ কর্তৃপক্ষ</div>
+                    </div>
+                    
+                    <div class="connector-line"></div>
+                    
+                    <!-- Step 2 -->
+                    <div class="bg-[#3b82f6] text-white font-semibold py-3 px-6 rounded-lg w-5/6 text-center shadow-md z-10">
+                        'প্রমিত বাংলা বানানের নিয়ম'
+                        <div class="text-xs text-blue-100 font-normal mt-1">গদ্য ও দাপ্তরিক কাজের মানদণ্ড</div>
+                    </div>
+                    
+                    <div class="connector-line"></div>
+                    
+                    <!-- Step 3 (Grid) -->
+                    <div class="grid grid-cols-2 gap-4 w-full">
+                        <div class="bg-slate-100 border-2 border-slate-200 text-slate-800 py-4 px-2 rounded-lg text-center text-sm font-semibold hover:bg-slate-200 transition">
+                            বিশ্ববিদ্যালয় জার্নাল
+                            <div class="text-xs text-slate-500 mt-1">উদ্ধৃতি শৈলী নির্ধারণ</div>
+                        </div>
+                        <div class="bg-slate-100 border-2 border-slate-200 text-slate-800 py-4 px-2 rounded-lg text-center text-sm font-semibold hover:bg-slate-200 transition">
+                            জাতীয় দৈনিক
+                            <div class="text-xs text-slate-500 mt-1">ব্যবহারিক প্রচলন</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Font Usage (Donut Chart) -->
+        <section class="col-span-1 md:col-span-12 lg:col-span-6 flex flex-col gap-6">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover h-full border-t-4 border-[#1e3a8a]">
+                <div class="flex items-center mb-6">
+                    <span class="bg-[#F59E0B] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">২</span>
+                    <h3 class="text-2xl font-bold text-[#1e3a8a]">ফন্টের ধরণ: ব্যবহার চিত্র</h3>
+                </div>
+                <p class="text-slate-600 mb-4 leading-relaxed">
+                    বর্তমানে ডিজিটাল প্রকাশনায় ইউনিকোডের জয়জয়কার হলেও, প্রিন্ট মিডিয়ায় এখনও 'সুতন্নিএমজে' এর মতো লিগ্যাসি ফন্টের ব্যবহার দেখা যায়।
+                </p>
+                
+                <div class="chart-container">
+                    <canvas id="fontShareChart"></canvas>
+                </div>
+                <div class="mt-4 text-sm text-slate-500 text-center italic">
+                    আধুনিক প্রকাশনা ও গবেষণায় ফন্ট ব্যবহারের আনুমানিক চিত্র
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Recommended Fonts (Comparison Bar) -->
+        <section class="col-span-1 md:col-span-12 mt-4">
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b pb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#1e3a8a]">গবেষণাপত্রের জন্য সেরা ফন্ট</h3>
+                        <p class="text-slate-600 mt-2">
+                            সেরিফ (Serif) ফন্ট চোখের জন্য আরামদায়ক এবং ছাপার জন্য উপযুক্ত।
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 bg-blue-50 text-blue-900 px-5 py-3 rounded-lg border border-blue-200 text-sm font-semibold shadow-sm">
+                        সুপারিশ: <span class="text-[#1e3a8a] text-lg">কালপুরুষ</span> অথবা <span class="text-[#1e3a8a] text-lg">নোটো সেরিফ</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="chart-container">
+                        <canvas id="fontRatingChart"></canvas>
+                    </div>
+                    
+                    <!-- Text Details -->
+                    <div class="space-y-6">
+                        <div class="flex group">
+                            <div class="w-1.5 bg-[#1e3a8a] rounded-full mr-4 group-hover:bg-[#F59E0B] transition"></div>
+                            <div>
+                                <h4 class="font-bold text-xl text-[#1e3a8a]">কালপুরুষ (Kalpurush)</h4>
+                                <p class="text-slate-600 mt-1">বাংলার "Times New Roman" হিসেবে খ্যাত। ইউনিকোড ভিত্তিক, অত্যন্ত পরিচ্ছন্ন এবং সব অপারেটিং সিস্টেমে সমর্থিত।</p>
+                            </div>
+                        </div>
+                        <div class="flex group">
+                            <div class="w-1.5 bg-[#3B82F6] rounded-full mr-4 group-hover:bg-[#F59E0B] transition"></div>
+                            <div>
+                                <h4 class="font-bold text-xl text-[#1e3a8a]">নোটো সেরিফ বেঙ্গলি (Noto Serif)</h4>
+                                <p class="text-slate-600 mt-1">গুগলের তৈরি ফন্ট। অনলাইন জার্নাল এবং পিডিএফ-এর জন্য চমৎকার। যুক্তাক্ষর ভাঙার কোনো সমস্যা নেই।</p>
+                            </div>
+                        </div>
+                        <div class="flex group opacity-75">
+                            <div class="w-1.5 bg-[#F59E0B] rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-bold text-xl text-[#1e3a8a]">সুতন্নিএমজে (SutonnyMJ)</h4>
+                                <p class="text-slate-600 mt-1">এটি ANSI বা লিগ্যাসি ফন্ট। শুধুমাত্র পুরনো প্রিন্টিং প্রেসের বাধ্যবাধকতা থাকলেই ব্যবহার করা উচিত।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Formatting Rules (Cards & Chart) -->
+        <section class="col-span-1 md:col-span-12 mt-6">
+            <h3 class="text-2xl font-bold text-[#1e3a8a] mb-6 pl-2 border-l-4 border-[#F59E0B]">গবেষণাপত্রের বিন্যাস ও কাঠামো</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Info Card -->
+                <div class="bg-[#1e293b] text-white rounded-xl p-6 shadow-lg relative overflow-hidden md:col-span-1">
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-[#F59E0B] rounded-full opacity-10"></div>
+                    <h4 class="text-xl font-bold mb-4 text-[#F59E0B]">ভাষার রীতি</h4>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        একাডেমিক বাংলায় ব্যাকরণের ক্ষেত্রে <strong>প্রমিত চলিত রীতি</strong> এবং শব্দচয়নের ক্ষেত্রে <strong>তৎসম বা পারিভাষিক</strong> শব্দ ব্যবহার কাম্য।
+                    </p>
+                    <ul class="text-sm space-y-3">
+                        <li class="flex items-center"><span class="text-[#F59E0B] mr-3 text-lg">✓</span> সাধু ও চলিত রীতির মিশ্রণ বর্জনীয় (গুরুচণ্ডালী দোষ)।</li>
+                        <li class="flex items-center"><span class="text-[#F59E0B] mr-3 text-lg">✓</span> আঞ্চলিকতা পরিহার করতে হবে।</li>
+                    </ul>
+                </div>
+
+                <!-- Visualization Card -->
+                <div class="bg-white rounded-xl p-6 shadow-md md:col-span-2 border border-slate-100">
+                    <h4 class="text-xl font-bold mb-4 text-[#1e3a8a]">উদ্ধৃতি বা সাইটেশনের উপাদান</h4>
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/2">
+                            <p class="text-slate-600 text-sm mb-6">
+                                বাংলা গবেষণাপত্রে APA বা MLA স্টাইল অনুসরণ করলেও ভাষাগত অভিযোজন প্রয়োজন। একটি পূর্ণাঙ্গ সাইটেশনে কোন তথ্যের গুরুত্ব কতটুকু?
+                            </p>
+                            <!-- Metrics Mini-Table -->
+                            <div class="bg-slate-50 rounded p-4">
+                                <div class="flex justify-between border-b border-slate-200 pb-2 mb-2">
+                                    <span class="text-slate-600 text-sm">বডি ফন্ট সাইজ</span>
+                                    <span class="font-bold text-[#1e3a8a]">১২ - ১৪ পয়েন্ট</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-200 pb-2 mb-2">
+                                    <span class="text-slate-600 text-sm">লাইন স্পেসিং</span>
+                                    <span class="font-bold text-[#1e3a8a]">১.৫ গুণ</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-600 text-sm">অ্যালাইনমেন্ট</span>
+                                    <span class="font-bold text-[#1e3a8a]">জাস্টিফাইড</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="chart-container" style="height: 300px;">
+                                <canvas id="citationChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Resources -->
+        <section class="col-span-1 md:col-span-12 my-8">
+            <div class="bg-gradient-to-r from-blue-50 to-white rounded-xl p-8 border border-blue-100 text-center shadow-inner">
+                <h3 class="text-2xl font-bold text-[#1e3a8a] mb-3">প্রয়োজনীয় টুলস ও রিসোর্স</h3>
+                <p class="text-slate-600 mb-6">গবেষণা শুরু করার আগে এই টুলগুলো সংগ্রহে রাখুন</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white px-5 py-2 rounded shadow-sm border border-blue-100 text-[#1e3a8a] font-medium hover:bg-blue-600 hover:text-white transition cursor-pointer">বাংলা একাডেমি অভিধান</span>
+                    <span class="bg-white px-5 py-2 rounded shadow-sm border border-blue-100 text-[#1e3a8a] font-medium hover:bg-blue-600 hover:text-white transition cursor-pointer">অভ্র কিবোর্ড</span>
+                    <span class="bg-white px-5 py-2 rounded shadow-sm border border-blue-100 text-[#1e3a8a] font-medium hover:bg-blue-600 hover:text-white transition cursor-pointer">সংসদ সমার্থক শব্দকোষ</span>
+                    <span class="bg-white px-5 py-2 rounded shadow-sm border border-blue-100 text-[#1e3a8a] font-medium hover:bg-blue-600 hover:text-white transition cursor-pointer">গুগল ফন্টস</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#1e293b] text-slate-400 py-8 text-center text-sm border-t border-slate-700">
+        <p class="serif-font">© ২০২৩ বাংলা গবেষণা নির্দেশিকা। প্রমিত চর্চায় আমরা অঙ্গীকারবদ্ধ।</p>
+    </footer>
+
+    <!-- Chart Configuration (Logic translated for Text wrapping) -->
+    <script>
+        // Set Default Font for Chart.js to Noto Sans Bengali
+        Chart.defaults.font.family = "'Noto Sans Bengali', sans-serif";
+        Chart.defaults.font.size = 14;
+        Chart.defaults.color = '#475569';
+
+        // Chart 1: Font Ecosystem
+        const ctxFontShare = document.getElementById('fontShareChart').getContext('2d');
+        new Chart(ctxFontShare, {
+            type: 'doughnut',
+            data: {
+                labels: ['ইউনিকোড (ওয়েব/ডিজিটাল)', 'লিগ্যাসি (প্রিন্ট মিডিয়া)', 'হাতে লেখা/অন্যান্য'],
+                datasets: [{
+                    data: [70, 25, 5],
+                    backgroundColor: [
+                        '#1e3a8a', // Dark Blue
+                        '#F59E0B', // Gold/Amber
+                        '#94A3B8'  // Grey
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#ffffff',
+                    hoverOffset: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            usePointStyle: true
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) return label.join(' ');
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 2: Font Rating
+        const ctxFontRating = document.getElementById('fontRatingChart').getContext('2d');
+        new Chart(ctxFontRating, {
+            type: 'bar',
+            data: {
+                labels: ['কালপুরুষ (ইউনিকোড)', 'নোটো সেরিফ বেঙ্গলি', 'সোলাইমানলিপি', 'সুতন্নিএমজে (লিগ্যাসি)'],
+                datasets: [{
+                    label: 'একাডেমিক গ্রহণযোগ্যতা (১০-এর মধ্যে)',
+                    data: [9.5, 9.2, 7.5, 8.0],
+                    backgroundColor: [
+                        '#1e3a8a', // Top choice
+                        '#2563EB', // Second choice
+                        '#60A5FA', // Third
+                        '#F59E0B'  // Legacy warning color
+                    ],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 10,
+                        grid: { display: false }
+                    },
+                    y: {
+                        grid: { display: false }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) return label.join(' ');
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 3: Citation Structure
+        const ctxCitation = document.getElementById('citationChart').getContext('2d');
+        new Chart(ctxCitation, {
+            type: 'polarArea',
+            data: {
+                labels: ['লেখকের নাম', 'শিরোনাম (ইটালিক)', 'প্রকাশকাল', 'প্রকাশনী', 'পৃষ্ঠা নম্বর'],
+                datasets: [{
+                    label: 'গুরুত্ব',
+                    data: [5, 4, 3, 3, 2],
+                    backgroundColor: [
+                        'rgba(30, 58, 138, 0.9)',  // Darkest Blue
+                        'rgba(37, 99, 235, 0.8)',  // Medium Blue
+                        'rgba(245, 158, 11, 0.7)', // Gold
+                        'rgba(96, 165, 250, 0.6)', // Light Blue
+                        'rgba(148, 163, 184, 0.5)' // Grey
+                    ],
+                    borderWidth: 1,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        ticks: { display: false },
+                        grid: { color: '#E2E8F0' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            font: { size: 11 },
+                            boxWidth: 12
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) return label.join(' ');
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
